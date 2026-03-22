@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Experiencia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">MiPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+                <li><a href="experiencia.html" class="active" data-i18n="nav.exp">Experiencia</a></li>
+                <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
+            </ul>
+            <div class="language-picker">
+                <i class="fas fa-globe"></i>
+                <select id="lang-selector">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                    <option value="ca">CA</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title">Experiencia Profesional</h1>
+        
+        <div class="experience-list">
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-titles">
+                        <h2>Soporte IT e Infraestructuras (Programa Erasmus+)</h2>
+                        <h3 class="location"><i class="fas fa-map-marker-alt"></i> República Checa</h3>
+                    </div>
+                    <span class="badge">Internacional</span>
+                </div>
+                <div class="exp-body grid-2-cols">
+                    <div class="exp-desc">
+                        <p>Inmersión en un entorno profesional multicultural utilizando el <strong>Inglés como lengua principal</strong> de comunicación técnica y de equipo.</p>
+                        <ul class="custom-bullets">
+                            <li><i class="fas fa-check-circle"></i> Integración rápida y adaptación a metodologías de trabajo europeas.</li>
+                            <li><i class="fas fa-check-circle"></i> Verificación de sistemas y asistencia técnica para garantizar un correcto funcionamiento.</li>
+                            <li><i class="fas fa-check-circle"></i> Demostración de alta autonomía en la resolución de problemas en un entorno internacional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-titles">
+                        <h2>Técnica de Sistemas y Redes (Prácticas)</h2>
+                        <h3 class="location"><i class="fas fa-building"></i> Institut Torre de Malla</h3>
+                    </div>
+                    <span class="badge badge-trust">Alto Nivel de Responsabilidad</span>
+                </div>
+                <div class="exp-body">
+                    <p class="highlight-text">
+                        <em>Nota destacada:</em> Dada la confianza del centro en mis capacidades técnicas, <strong>se me otorgó acceso administrativo a la red del instituto</strong> siendo aún alumna, gestionando servicios críticos y asumiendo responsabilidades de nivel profesional.
+                    </p>
+                    <div class="grid-3-cols mt-3">
+                        <div class="task-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Supervisión de Red</h4>
+                            <p>Monitoreo para minimizar interrupciones y garantizar la estabilidad del servicio a usuarios.</p>
+                        </div>
+                        <div class="task-card">
+                            <i class="fas fa-tools"></i>
+                            <h4>Mantenimiento</h4>
+                            <p>Resolución de incidencias, gestión de copias de seguridad e instalación de sistemas operativos.</p>
+                        </div>
+                        <div class="task-card">
+                            <i class="fas fa-book"></i>
+                            <h4>Documentación</h4>
+                            <p>Creación de documentación técnica detallada para reducir consultas y mejorar la autonomía de los usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/lang.js"></script>
+</body>
+</html>

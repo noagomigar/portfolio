@@ -385,7 +385,7 @@ em { color: var(--cyan); font-style: italic; }
   position: relative;
   z-index: 1;
   /* 5px gap between image and spinning border */
-  outline: 5px solid var(--void);
+  outline: 5px solid var(--ocean);
   box-shadow:
     0 0 40px rgba(3, 15, 128, 0.25),
     0 0 80px rgba(191, 90, 242, 0.15),

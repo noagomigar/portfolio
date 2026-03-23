@@ -8,89 +8,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">MiPortfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
-                <li><a href="sobre-mi.html" class="active" data-i18n="nav.about">Sobre mí</a></li>
-                <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
-                <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
-                <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
-            </ul>
-            <div class="language-picker">
-                <i class="fas fa-globe"></i>
-                <select id="lang-selector">
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                    <option value="ca">CA</option>
-                </select>
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">MiPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="sobre-mi.html" class="active" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
+        </ul>
+        <div class="language-picker">
+            <i class="fas fa-globe"></i>
+            <select id="lang-selector">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="ca">CA</option>
+            </select>
+        </div>
+    </nav>
+</header>
+
+<main class="page-container">
+    <section class="about-grid">
+        <article class="about-main-content">
+            <h1 data-i18n="about.title">Conóceme</h1>
+            <div class="vision-statement">
+                <i class="fas fa-quote-left"></i>
+                <p data-i18n="about.female_tech">
+                    Como mujer apasionada por la informática en un sector tradicionalmente dominado por hombres, estoy firmemente decidida a romper barreras y convertirme en un referente femenino. Mi curiosidad técnica me impulsa a no dejar de aprender y mejorar constantemente.
+                </p>
             </div>
-        </nav>
-    </header>
 
-    <main class="page-container">
-        <section class="about-grid">
-            <article class="about-main-content">
-                <h1 data-i18n="about.title">Conóceme</h1>
-                <div class="vision-statement">
-                    <i class="fas fa-quote-left"></i>
-                    <p data-i18n="about.female_tech">
-                        Como mujer apasionada por la informática en un sector tradicionalmente dominado por hombres, estoy firmemente decidida a romper barreras y convertirme en un referente femenino. Entender cómo el código interactúa con el sistema y el usuario final es lo que me motiva a crear soluciones completas. Me considero una persona curiosa, con iniciativa y ganas constantes de aprender y mejorar.
-                    </p>
+            <h3 data-i18n="about.education">Educación</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">2023 - 2026</span>
+                    <h4 data-i18n="about.edu1_title">CFGS Desarrollo de Aplicaciones Multiplataforma</h4>
+                    <p data-i18n="about.edu1_school">Institut Torre de Malla</p>
                 </div>
+                <div class="timeline-item">
+                    <span class="date">2021 - 2023</span>
+                    <h4 data-i18n="about.edu2_title">CFGM Sistemas Microinformáticos y Redes</h4>
+                    <p data-i18n="about.edu2_school">INS Torre de Malla</p>
+                </div>
+            </div>
+        </article>
 
-                <h3>Educación</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="date">2023 - 2026</span>
-                        <h4>CFGS Desenvolupament d'Aplicacions Multiplataforma</h4>
-                        <p>Institut Torre de Malla</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2021 - 2023</span>
-                        <h4>CFGM Sistemes Microinformàtics i Xarxes</h4>
-                        <p>INS Torre de Malla</p>
-                    </div>
-                </div>
-            </article>
+        <aside class="skills-sidebar">
+            <div class="skill-box">
+                <h3 data-i18n="about.soft_title">Habilidades Blandas</h3>
+                <ul class="tag-list">
+                    <li data-i18n="about.skill_leadership">Liderazgo</li>
+                    <li data-i18n="about.skill_communication">Comunicación Asertiva</li>
+                    <li data-i18n="about.skill_problem">Resolución de Problemas</li>
+                    <li data-i18n="about.skill_autonomy">Autonomía</li>
+                    <li data-i18n="about.skill_teamwork">Trabajo en Equipo</li>
+                    <li data-i18n="about.skill_responsibility">Sentido de la Responsabilidad</li>
+                </ul>
+            </div>
 
-            <aside class="skills-sidebar">
-                <div class="skill-box">
-                    <h3>Soft Skills</h3>
-                    <ul class="tag-list">
-                        <li>Liderazgo</li>
-                        <li>Comunicación Asertiva</li>
-                        <li>Resolución de Problemas</li>
-                        <li>Autonomía</li>
-                        <li>Trabajo en Equipo</li>
-                        <li>Sentido de la Responsabilidad</li>
-                    </ul>
+            <div class="skill-box mt-4">
+                <h3 data-i18n="about.tech_title">Conocimientos Técnicos</h3>
+                <div class="tech-category">
+                    <h4><i class="fas fa-code"></i> <span data-i18n="about.tech_prog_title">Programación</span></h4>
+                    <p data-i18n="about.tech_prog_desc">Multiplataforma, Web y Móvil</p>
                 </div>
-                
-                <div class="skill-box mt-4">
-                    <h3>Conocimientos Técnicos</h3>
-                    <div class="tech-category">
-                        <h4><i class="fas fa-code"></i> Programación</h4>
-                        <p>Multiplataforma, Web y Móvil</p>
-                    </div>
-                    <div class="tech-category">
-                        <h4><i class="fas fa-database"></i> Bases de Datos</h4>
-                        <p>Diseño y administración (Relacionales y No Relacionales)</p>
-                    </div>
-                    <div class="tech-category">
-                        <h4><i class="fas fa-server"></i> Sistemas y Redes</h4>
-                        <p>Linux, Windows, Configuración LAN, Seguridad y Mantenimiento de equipos</p>
-                    </div>
-                    <div class="tech-category">
-                        <h4><i class="fas fa-tasks"></i> Metodologías</h4>
-                        <p>Scrum, Sprints, Trello</p>
-                    </div>
+                <div class="tech-category">
+                    <h4><i class="fas fa-database"></i> <span data-i18n="about.tech_db_title">Bases de Datos</span></h4>
+                    <p data-i18n="about.tech_db_desc">Diseño y administración (Relacionales y No Relacionales)</p>
                 </div>
-            </aside>
-        </section>
-    </main>
+                <div class="tech-category">
+                    <h4><i class="fas fa-server"></i> <span data-i18n="about.tech_sys_title">Sistemas y Redes</span></h4>
+                    <p data-i18n="about.tech_sys_desc">Linux, Windows, Configuración LAN, Seguridad y Mantenimiento de equipos</p>
+                </div>
+                <div class="tech-category">
+                    <h4><i class="fas fa-tasks"></i> <span data-i18n="about.tech_methods_title">Metodologías</span></h4>
+                    <p data-i18n="about.tech_methods_desc">Scrum, Sprints, Trello</p>
+                </div>
+            </div>
+        </aside>
+    </section>
+</main>
 
-    <script src="./js/lang.js"></script>
+<script src="./js/lang.js"></script>
 </body>
 </html>

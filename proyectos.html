@@ -8,70 +8,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">MiPortfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
-                <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
-                <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
-                <li><a href="proyectos.html" class="active" data-i18n="nav.projects">Proyectos</a></li>
-                <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
-            </ul>
-            <div class="language-picker">
-                <i class="fas fa-globe"></i>
-                <select id="lang-selector">
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                    <option value="ca">CA</option>
-                </select>
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">MiPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
+            <li><a href="proyectos.html" class="active" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
+        </ul>
+        <div class="language-picker">
+            <i class="fas fa-globe"></i>
+            <select id="lang-selector">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="ca">CA</option>
+            </select>
+        </div>
+    </nav>
+</header>
+
+<main class="page-container bg-light">
+    <h1 class="page-title text-center" data-i18n="projects.title">Mis Proyectos</h1>
+    <p class="text-center subtitle-text" data-i18n="projects.subtitle">Aplicaciones, scripts y configuraciones de red en las que he trabajado durante mi formación y por mi cuenta.</p>
+
+    <section class="projects-grid">
+        <article class="project-card">
+            <div class="project-img">
+                <i class="fas fa-laptop-code fa-4x"></i>
             </div>
-        </nav>
-    </header>
+            <div class="project-content">
+                <h3 data-i18n="proj1.title">App de Gestión Multiplataforma</h3>
+                <p data-i18n="proj1.desc">Desarrollo de una aplicación completa conectando frontend con bases de datos relacionales.</p>
+                <div class="tech-tags">
+                    <span data-i18n="proj1.tag1">Programación</span>
+                    <span data-i18n="proj1.tag2">Bases de Datos</span>
+                    <span data-i18n="proj1.tag3">UI/UX</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small"><i class="fab fa-github"></i> <span data-i18n="proj1.btn">Ver Código</span></a>
+                </div>
+            </div>
+        </article>
 
-    <main class="page-container bg-light">
-        <h1 class="page-title text-center">Mis Proyectos</h1>
-        <p class="text-center subtitle-text">Aplicaciones, scripts y configuraciones de red en las que he trabajado durante mi formación y por mi cuenta.</p>
-        
-        <section class="projects-grid">
-            <article class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-laptop-code fa-4x"></i>
+        <article class="project-card">
+            <div class="project-img">
+                <i class="fas fa-server fa-4x"></i>
+            </div>
+            <div class="project-content">
+                <h3 data-i18n="proj2.title">Arquitectura de Red Segura</h3>
+                <p data-i18n="proj2.desc">Diseño, configuración y puesta en marcha de una red local (LAN) en entorno Linux/Windows con políticas de seguridad.</p>
+                <div class="tech-tags">
+                    <span data-i18n="proj2.tag1">Linux</span>
+                    <span data-i18n="proj2.tag2">Redes</span>
+                    <span data-i18n="proj2.tag3">Ciberseguridad</span>
                 </div>
-                <div class="project-content">
-                    <h3>App de Gestión Multiplataforma</h3>
-                    <p>Desarrollo de una aplicación completa conectando frontend con bases de datos relacionales.</p>
-                    <div class="tech-tags">
-                        <span>Programación</span>
-                        <span>Bases de Datos</span>
-                        <span>UI/UX</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Ver Código</a>
-                    </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-small"><i class="fas fa-file-alt"></i> <span data-i18n="proj2.btn">Documentación</span></a>
                 </div>
-            </article>
+            </div>
+        </article>
+    </section>
+</main>
 
-            <article class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-server fa-4x"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Arquitectura de Red Segura</h3>
-                    <p>Diseño, configuración y puesta en marcha de una red local (LAN) en entorno Linux/Windows con políticas de seguridad.</p>
-                    <div class="tech-tags">
-                        <span>Linux</span>
-                        <span>Redes</span>
-                        <span>Ciberseguridad</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small"><i class="fas fa-file-alt"></i> Documentación</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <script src="./js/lang.js"></script>
+<script src="./js/lang.js"></script>
 </body>
 </html>

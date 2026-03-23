@@ -8,71 +8,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active" data-i18n="nav.home">Inicio</a></li>
-                <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
-                <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
-                <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
-                <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
-            </ul>
-            <div class="language-picker">
-                <i class="fas fa-globe"></i>
-                <select id="lang-selector">
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                    <option value="ca">CA</option>
-                </select>
-            </div>
-        </nav>
-    </header>
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
+        </ul>
+        <div class="language-picker">
+            <i class="fas fa-globe"></i>
+            <select id="lang-selector">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="ca">CA</option>
+            </select>
+        </div>
+    </nav>
+</header>
 
-    <main class="home-container">
-        <section class="hero-split">
-            <div class="hero-image-wrapper">
-                <img src="./img/noa.jpg" alt="Foto de perfil profesional" id="profile-img">
-                <div class="social-links">
-                    <a href="www.linkedin.com/in/noa-gómez-i-garcía-9561072b7" target="_blank" class="btn-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com/noagomigar" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+<main class="home-container">
+    <section class="hero-split">
+        <div class="hero-image-wrapper">
+            <img src="./img/noa.jpg" alt="Foto de perfil profesional" id="profile-img">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/noa-gómez-i-garcía-9561072b7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/noagomigar" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h3 data-i18n="hero.greeting">Hola, soy</h3>
+            <h1 class="main-title">Noa Gómez I García</h1>
+            <h2 class="subtitle" data-i18n="hero.role">Desarrolladora Multiplataforma & Técnica en Sistemas</h2>
+            <p class="hero-bio" data-i18n="hero.desc">
+                Apasionada por el código, la infraestructura y la resolución de problemas. Construyendo soluciones eficientes y seguras.
+            </p>
+
+            <div class="cv-download-section">
+                <p class="section-label" data-i18n="cv.download">Descargar CV:</p>
+                <div class="btn-group">
+                    <a href="./cv/cv-es.pdf" download class="btn btn-outline" data-i18n="cv.es">🇪🇸 Español</a>
+                    <a href="./cv/cv-ca.pdf" download class="btn btn-outline" data-i18n="cv.ca">🇦🇩 Català</a>
+                    <a href="./cv/cv-en.pdf" download class="btn btn-outline" data-i18n="cv.en">🇬🇧 English</a>
+                    <a href="./cv/cv-europass.pdf" download class="btn btn-outline">🇪🇺 Europass</a>
                 </div>
             </div>
 
-            <div class="hero-content">
-                <h3 data-i18n="hero.greeting">Hola, soy</h3>
-                <h1 class="main-title">Noa Gómez I García</h1>
-                <h2 class="subtitle" data-i18n="hero.role">Desarrolladora Multiplataforma & Técnica en Sistemas</h2>
-                <p class="hero-bio" data-i18n="hero.desc">
-                    Apasionada por el código, la infraestructura y la resolución de problemas. Construyendo soluciones eficientes y seguras.
-                </p>
-
-                <div class="cv-download-section">
-                    <p class="section-label" data-i18n="cv.download">Descargar CV:</p>
-                    <div class="btn-group">
-                        <a href="./cv/cv-es.pdf" download class="btn btn-outline" data-i18n="cv.es">Español</a>
-                        <a href="./cv/cv-ca.pdf" download class="btn btn-outline" data-i18n="cv.ca">Català</a>
-                        <a href="./cv/cv-en.pdf" download class="btn btn-outline" data-i18n="cv.en">English</a>
-                        <a href="./cv/cv-europass.pdf" download class="btn btn-outline">🇪🇺 Europass</a>
-                    </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <i class="fas fa-language fa-2x"></i>
+                    <h4 data-i18n="highlight.lang_title">Nivel de Inglés</h4>
+                    <p data-i18n="highlight.lang_level">Alto dominio</p>
                 </div>
-
-                <div class="highlights-grid">
-                    <div class="highlight-card">
-                        <i class="fas fa-language fa-2x"></i>
-                        <h4>English Level</h4>
-                        <p>High Proficiency</p>
-                    </div>
-                    <div class="highlight-card">
-                        <i class="fas fa-network-wired fa-2x"></i>
-                        <h4>IT & SysAdmin</h4>
-                        <p>Especialista en infraestructuras</p>
-                    </div>
+                <div class="highlight-card">
+                    <i class="fas fa-network-wired fa-2x"></i>
+                    <h4 data-i18n="highlight.it_title">IT & SysAdmin</h4>
+                    <p data-i18n="highlight.it_desc">Especialista en infraestructuras</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
-    <script src="./js/lang.js"></script>
+<script src="./js/lang.js"></script>
 </body>
 </html>

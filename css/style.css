@@ -1030,6 +1030,37 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   outline-offset: 3px; border-radius: 4px;
 }
 
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sp-l) var(--sp-xl);
+    border-top: 1px solid var(--border-soft);
+    background: rgba(245,239,228,0.88);
+    backdrop-filter: blur(20px);
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    color: var(--text-soft);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--sp-m);
+}
+
+.footer-links a {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    color: var(--text-soft);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.22s ease;
+}
+
+.footer-links a:hover { color: var(--sakura); }
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

@@ -233,7 +233,7 @@ body::after {
    ============================================================ */
 .home-container {
   min-height: calc(100vh - 60px);
-  background: var(--warm-white);
+    background: linear-gradient(to bottom, var(--cream) 0%, var(--warm-white) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,7 +493,7 @@ body::after {
   padding: 0;        /* sin padding: el contenido se expande solo */
 }
 
-.bg-light { background: var(--warm-white); }
+.bg-light { background: linear-gradient(to bottom, var(--cream) 0%, var(--warm-white) 100%); min-height: 100vh; }
 
 /* Título de página — band de color a todo ancho */
 .page-title-band {
@@ -754,7 +754,10 @@ body::after {
 }
 .exp-card:last-child { border-bottom: 1px solid var(--border-soft); }
 
-.exp-card:hover { background: var(--linen); }
+.exp-card:nth-child(1):hover { background: linear-gradient(135deg, #ccdaf7 0%, #dcd8f2 60%, #ece6ff 100%); }
+.exp-card:nth-child(2):hover { background: linear-gradient(135deg, #fcd4b8 0%, #fad0dc 60%, #ffe0b8 100%); }
+.exp-card:nth-child(3):hover { background: linear-gradient(135deg, #c0e4ca 0%, #b8dcd0 60%, #c4e8d4 100%); }
+.exp-card:nth-child(4):hover { background: linear-gradient(135deg, #dccaf4 0%, #ead0e8 60%, #f2d8ec 100%); }
 
 /* Gradientes de fondo por tarjeta */
 .exp-card:nth-child(1) { background: linear-gradient(135deg, #dce8fa 0%, #e8e4f6 60%, #f5efff 100%); }
@@ -820,6 +823,20 @@ body::after {
 }
 .exp-titles h3.location i { color: var(--sakura); }
 
+.exp-titles {
+    width: 100%;
+    text-align: center;
+}
+.exp-titles::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 80%;
+    margin: var(--sp-m) auto 0;
+    border-radius: var(--r-pill);
+    background: linear-gradient(90deg, transparent, var(--cobalt-soft), var(--lavender), transparent);
+}
+
 .badge {
   font-family: var(--font-ui); font-size: 0.61rem; font-weight: 500;
   text-transform: uppercase; letter-spacing: 0.11em;
@@ -845,7 +862,16 @@ body::after {
   line-height: 1.75; color: var(--text-mid); margin-bottom: var(--sp-m);
 }
 
-.custom-bullets { list-style: none; display: flex; flex-direction: column; gap: var(--sp-s); }
+.custom-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-s);
+    background: linear-gradient(135deg, var(--cobalt-pale) 0%, var(--lavender-pale) 100%);
+    border-radius: var(--r-asym-a);
+    padding: var(--sp-m) var(--sp-l);
+    margin-top: var(--sp-m);
+}
 .custom-bullets li {
   display: flex; align-items: flex-start; gap: var(--sp-s);
   font-family: var(--font-body); font-size: 0.97rem;
@@ -864,7 +890,7 @@ body::after {
 .highlight-text strong { color: var(--sakura); font-weight: 600; }
 .highlight-text em { font-style: italic; color: var(--text-mid); }
 
-.grid-2-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-l); }
+.grid-2-cols { display: block; }
 .grid-3-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-m); }
 .mt-3 { margin-top: var(--sp-l); }
 
@@ -948,12 +974,16 @@ body::after {
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
 }
-.project-card:first-child .project-img {
-  background: linear-gradient(145deg, var(--cobalt-pale) 0%, var(--lavender-pale) 100%);
+.project-card:nth-child(1) .project-img {
+    background: linear-gradient(145deg, var(--cobalt-pale) 0%, var(--lavender-pale) 100%);
 }
-.project-card:last-child .project-img {
-  background: linear-gradient(145deg, var(--bamboo-pale) 0%, var(--cobalt-pale) 100%);
+.project-card:nth-child(2) .project-img {
+    background: linear-gradient(145deg, var(--bamboo-pale) 0%, var(--cobalt-pale) 100%);
 }
+.project-card:nth-child(3) .project-img {
+    background: linear-gradient(145deg, var(--lavender-pale) 0%, var(--sakura-pale) 100%);
+}
+
 .project-img::before {
   content: '';
   position: absolute;
@@ -1027,5 +1057,3 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   .home-container { padding: var(--sp-l) var(--sp-m); }
   .navbar { padding: var(--sp-s) var(--sp-m); }
 }
-styles (1).css
-Es mostra styles (1).css.

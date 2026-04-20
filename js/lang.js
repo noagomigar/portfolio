@@ -81,6 +81,11 @@ const translations = {
         "hybrid_sound.desc": "Portal de música alternativa con diseño 'dark mode'. Incluye maquetación avanzada con Flexbox y Grid, animaciones personalizadas y una arquitectura de CSS modular.",
         "hybrid_sound.btn_repo": "Ver Código",
         "hybrid_sound.btn_live": "Ver Sitio",
+        "teelab.title": "Teelab - E-commerce Fullstack",
+        "teelab.desc": "Plataforma de venta de camisetas con filtrado dinámico de productos, sistema de carrito de compra y generación de tickets de pedido. Conectado a un backend en Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "Ver Código",
+        "teelab.btn_live": "Ver Sitio",
     },
 
     en: {
@@ -165,6 +170,11 @@ const translations = {
         "hybrid_sound.desc": "Alternative music portal with a 'dark mode' design. Features advanced layout using Flexbox and Grid, custom animations, and a modular CSS architecture.",
         "hybrid_sound.btn_repo": "View Code",
         "hybrid_sound.btn_live": "Live Demo",
+        "teelab.title": "Teelab - Fullstack E-commerce",
+        "teelab.desc": "T-shirt store platform featuring dynamic product filtering, a shopping cart system, and order ticket generation. Integrated with a custom backend hosted on Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "View Code",
+        "teelab.btn_live": "Live Demo",
     },
 
     ca: {
@@ -249,6 +259,11 @@ const translations = {
         "hybrid_sound.desc": "Portal de música alternativa amb disseny 'dark mode'. Inclou maquetació avançada amb Flexbox i Grid, animacions personalitzades i una arquitectura de CSS modular.",
         "hybrid_sound.btn_repo": "Veure Codi",
         "hybrid_sound.btn_live": "Veure lloc web",
+        "teelab.title": "Teelab - E-commerce Fullstack",
+        "teelab.desc": "Plataforma de venda de samarretes amb filtratge dinàmic de productes, sistema de carret d'anar a comprar i generació de tiquets de comanda. Connectat a un backend a Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "Veure Codi",
+        "teelab.btn_live": "Veure lloc web",
     }
 };
 

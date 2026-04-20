@@ -97,7 +97,7 @@ const translations = {
         // --- INDEX: HERO ---
         "hero.greeting": "Hi, I'm",
         "hero.role": "Cross-platform App Developer & Systems Technician",
-        "hero.desc": "Passionate about code, infrastructure, and problem-solving. Building efficient and secure solutions.",
+        "hero.desc": "Passionate about computer science, with a growing interest in the field of bioinformatics. I am motivated to understand and apply technology to data analysis in scientific environments, contributing to secure and efficient solutions from a technical and analytical perspective.",
 
         // --- INDEX: CV ---
         "cv.download": "Download Resume:",
@@ -113,7 +113,7 @@ const translations = {
 
         // --- SOBRE MÍ ---
         "about.title": "About Me",
-        "about.female_tech": "As a woman passionate about IT in a male-dominated field, I am determined to break barriers and become a female role model. My technical curiosity drives me to constantly learn and improve.",
+        "about.female_tech": "As a woman passionate about computer science in a traditionally male-dominated field, I am firmly determined to break barriers and become a female role model. I am particularly interested in guiding my career towards bioinformatics, combining data analysis in scientific environments with good cybersecurity practices and information protection. My technical curiosity drives me to keep learning and continuously evolving.",
         "about.education": "Education",
         "about.edu1_title": "Higher Degree in Cross-platform Application Development",
         "about.edu1_school": "Institut Torre de Malla",
@@ -184,7 +184,7 @@ const translations = {
         // --- INDEX: HERO ---
         "hero.greeting": "Hola, sóc",
         "hero.role": "Desenvolupadora d'Aplicacions Multiplataforma i Tècnica de Sistemes",
-        "hero.desc": "Apassionada pel codi, la infraestructura i la resolució de problemes. Construint solucions eficients i segures.",
+        "hero.desc": "Apasionada per la informàtica, amb un interès creixent en l’àmbit de la bioinformàtica i la seguretat informàtica. Em motiva comprendre i aplicar la tecnologia a l’anàlisi de dades en entorns científics, contribuint a solucions segures i eficients des d’una perspectiva tècnica i analítica.",
 
         // --- INDEX: CV ---
         "cv.download": "Descarregar CV:",
@@ -200,7 +200,7 @@ const translations = {
 
         // --- SOBRE MI ---
         "about.title": "Coneix-me",
-        "about.female_tech": "Com a dona apassionada per la informàtica en un sector tradicionalment dominat per homes, estic fermament decidida a trencar barreres i convertir-me en un referent femení. La meva curiositat tècnica m'impulsa a no deixar d'aprendre i millorar.",
+        "about.female_tech": "Com a dona apassionada per la informàtica en un sector tradicionalment dominat per homes, estic fermament decidida a trencar barreres i convertir-me en un referent femení. M’interessa especialment orientar la meva trajectòria cap a la bioinformàtica, combinant l’anàlisi de dades en entorns científics amb bones pràctiques de ciberseguretat i protecció de la informació. La meva curiositat tècnica m’impulsa a continuar aprenent i evolucionant constantment.",
         "about.education": "Educació",
         "about.edu1_title": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
         "about.edu1_school": "Institut Torre de Malla",

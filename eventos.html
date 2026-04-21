@@ -3,75 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Proyectos</title>
+    <title>Portfolio | Eventos</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <div class="logo">Portfolio Noa Gómez I García</div>
-            <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
-                <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
-                <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
-                <li><a href="proyectos.html" class="active" data-i18n="nav.projects">Proyectos</a></li>
-                <li><a href="eventos.html" data-i18n="nav.events">Eventos</a></li>
-            </ul>
-            <div class="language-picker">
-                <i class="fas fa-globe"></i>
-                <select id="lang-selector">
-                    <option value="ca">CA</option>
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">Portfolio Noa Gómez I García</div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="experiencia.html" data-i18n="nav.exp">Experiencia</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="eventos.html" class="active" data-i18n="nav.events">Eventos</a></li>
+        </ul>
+        <div class="language-picker">
+            <i class="fas fa-globe"></i>
+            <select id="lang-selector">
+                <option value="ca">CA</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="events-title-band">
+        <h1 class="page-title" data-i18n="events.title">Eventos & Publicaciones</h1>
+        <p class="subtitle-text" data-i18n="events.subtitle">Un diario de experiencias, reflexiones y momentos que han marcado mi trayectoria profesional.</p>
+    </div>
+
+    <!-- BUSCADOR Y FILTROS — panel rediseñado -->
+    <div class="ev-search-panel">
+        <div class="ev-search-input-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="ev-search" placeholder="Buscar por palabras clave..." autocomplete="off">
+        </div>
+        <div class="ev-search-controls">
+            <div class="ev-filters">
+                <button class="ev-filter-btn active" data-filter="all">Todos</button>
+                <button class="ev-filter-btn" data-filter="erasmus">Erasmus</button>
+                <button class="ev-filter-btn" data-filter="hackathon">Hackathons</button>
+                <button class="ev-filter-btn" data-filter="feminismo">Feminismo</button>
+                <button class="ev-filter-btn" data-filter="empresas">Contacto empresas</button>
+                <button class="ev-filter-btn" data-filter="arte">Arte & Creatividad</button>
+            </div>
+            <div class="ev-sort">
+                <i class="fas fa-sort-amount-down"></i>
+                <select id="ev-sort-select">
+                    <option value="recent">Más reciente</option>
+                    <option value="oldest">Más antiguo</option>
                 </select>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <main class="page-container bg-light">
-        <h1 class="page-title text-center">Mis Proyectos</h1>
-        <p class="text-center subtitle-text">Aplicaciones, scripts y configuraciones de red en las que he trabajado durante mi formación y por mi cuenta.</p>
-        
-        <section class="projects-grid">
-            <article class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-laptop-code fa-4x"></i>
-                </div>
-                <div class="project-content">
-                    <h3>App de Gestión Multiplataforma</h3>
-                    <p>Desarrollo de una aplicación completa conectando frontend con bases de datos relacionales.</p>
-                    <div class="tech-tags">
-                        <span>Programación</span>
-                        <span>Bases de Datos</span>
-                        <span>UI/UX</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Ver Código</a>
-                    </div>
-                </div>
-            </article>
+    <p id="ev-no-results" class="ev-no-results" style="display:none;">
+        <i class="fas fa-search"></i> No se han encontrado eventos con esa búsqueda.
+    </p>
 
-            <article class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-server fa-4x"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Arquitectura de Red Segura</h3>
-                    <p>Diseño, configuración y puesta en marcha de una red local (LAN) en entorno Linux/Windows con políticas de seguridad.</p>
-                    <div class="tech-tags">
-                        <span>Linux</span>
-                        <span>Redes</span>
-                        <span>Ciberseguridad</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="btn btn-small"><i class="fas fa-file-alt"></i> Documentación</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
+    <section class="events-list" id="events-list">
 
-    <script src="./js/lang.js"></script>
+        <!-- ERASMUS — media izquierda, texto derecha — verde bambú -->
+        <article class="ev-card ev-erasmus"
+                 data-date="2023-09-01"
+                 data-tags="erasmus,internacional,unity,cultural,republica checa"
+                 data-category="erasmus">
+            <div class="ev-symbol"><i class="fas fa-globe-europe"></i></div>
+            <div class="ev-media">
+                <div class="ev-carousel">
+                    <div class="carousel-track" id="track-erasmus" data-current-slide="0">
+                        <div class="carousel-slide"><img src="./assets/eventos/erasmus1.jpg" alt="Erasmus Sedlčany"></div>
+                        <div class="carousel-slide"><img src="./assets/eventos/erasmus2.jpg" alt="Unity Pixel Art"></div>
+                        <div class="carousel-slide"><video controls><source src="./assets/eventos/erasmus_video.mp4" type="video/mp4"></video></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('track-erasmus', -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveCarousel('track-erasmus', 1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="far fa-calendar-alt"></i> Septiembre 2023</span>
+                <h3 data-i18n="erasmus.title">My Erasmus in Sedlčany</h3>
+                <p data-i18n="erasmus.p1">Durante mi estancia Erasmus...</p>
+                <p data-i18n="erasmus.p2">Durante las prácticas, trabajé con Unity...</p>
+                <p data-i18n="erasmus.p3">Miro hacia atrás a esta etapa...</p>
+                <div class="tech-tags">
+                    <span>#ErasmusPlus</span><span>#Unity3D</span><span>#CulturalExchange</span>
+                </div>
+                <a href="URL_DE_TU_POST_EN_LINKEDIN" target="_blank" class="ev-btn">
+                    <i class="fab fa-linkedin"></i> <span data-i18n="eventos.btn_linkedin">Ver post original</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- HACKATHON 24h — media izquierda, texto derecha — AZUL -->
+        <article class="ev-card ev-hackathon"
+                 data-date="2024-11-01"
+                 data-tags="hackathon,fintech,imagin,innovacion,24h,app"
+                 data-category="hackathon">
+            <div class="ev-symbol"><i class="fas fa-bolt"></i></div>
+            <div class="ev-media">
+                <div class="ev-single-media">
+                    <video controls preload="metadata">
+                        <source src="./assets/eventos/24h_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="far fa-clock"></i> Noviembre 2024</span>
+                <h3 data-i18n="hackathon.title">24h Innovació: El nacimiento de Imaginem</h3>
+                <p data-i18n="hackathon.p1">Durante el hashtag #24hinnovacio, viví uno de los desafíos más intensos...</p>
+                <p data-i18n="hackathon.p2">Nuestro reto vino de imagin: diseñar la versión futura de su app...</p>
+                <ul class="ev-feature-list">
+                    <li><strong>Life Mode:</strong> <span data-i18n="hackathon.li1">transformando dinero en el tiempo que cuesta ganarlo.</span></li>
+                    <li><strong>ImaginAI:</strong> <span data-i18n="hackathon.li2">un asistente integrado capaz de interpretar la intención del usuario.</span></li>
+                    <li><strong>Ghost Identity:</strong> <span data-i18n="hackathon.li3">tarjetas de un solo uso y un buzón seguro.</span></li>
+                    <li><strong>Global Citizen:</strong> <span data-i18n="hackathon.li4">gestión de divisas sin comisiones.</span></li>
+                </ul>
+                <div class="tech-tags">
+                    <span>#24hInnovacio</span><span>#Hackathon</span><span>#Fintech</span><span>#Imagin</span>
+                </div>
+                <div class="ev-btn-group">
+                    <a href="proyectos.html" class="ev-btn ev-btn-accent"><i class="fas fa-rocket"></i> <span data-i18n="hackathon.btn_project">Ver Proyecto Imaginem</span></a>
+                    <a href="URL_DE_TU_POST_EN_LINKEDIN" target="_blank" class="ev-btn"><i class="fab fa-linkedin"></i> <span data-i18n="eventos.btn_linkedin">Ver post original</span></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 8M — media izquierda (cita visual), texto derecha — lila -->
+        <article class="ev-card ev-8m"
+                 data-date="2024-03-08"
+                 data-tags="8m,feminismo,womenintech,it,mujer,hedy lamarr"
+                 data-category="feminismo">
+            <div class="ev-symbol"><i class="fas fa-venus"></i></div>
+            <div class="ev-media ev-8m-quote-panel">
+                <div class="ev-quote-visual">
+                    <i class="fas fa-quote-left ev-8m-quote-icon"></i>
+                    <blockquote class="ev-quote" data-i18n="womensday.quote">
+                        "Una de las mujeres que más me inspira es Hedy Lamarr. En una época en la que la sociedad solo quería que las mujeres fueran hermosas y silenciosas, ella se negó a ser definida por eso..."
+                    </blockquote>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="far fa-calendar-alt"></i> 8 de Marzo, 2024</span>
+                <h3 data-i18n="womensday.title">Día Internacional de la Mujer en IT</h3>
+                <p data-i18n="womensday.p1">Por el Día Internacional de la Mujer, quería compartir un poco sobre lo que significa ser mujer en IT...</p>
+                <p data-i18n="womensday.p2">Su historia es importante para mí porque es la prueba de que la sociedad puede subestimar a las mujeres, pero no puede decidir de lo que somos capaces.</p>
+                <p data-i18n="womensday.p3">Y aunque hoy sea 8M, quiero ser clara: el feminismo y la lucha por el reconocimiento en tech no ocurren solo una vez al año...</p>
+                <div class="tech-tags">
+                    <span>#8M</span><span>#WomenInTech</span><span>#Feminism</span><span>#IT</span>
+                </div>
+                <a href="URL_DE_TU_POST_EN_INSTAGRAM" target="_blank" class="ev-btn ev-btn-ig">
+                    <i class="fab fa-instagram"></i> <span data-i18n="womensday.btn_ig">Ver post en Instagram</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- MWC / TALENT ARENA — media izquierda, texto derecha — ROJO -->
+        <article class="ev-card ev-mwc"
+                 data-date="2025-02-01"
+                 data-tags="mwc,talentatrena,bioinformatica,salud,ia,empresas,congreso"
+                 data-category="empresas">
+            <div class="ev-symbol"><i class="fas fa-dna"></i></div>
+            <div class="ev-media">
+                <div class="ev-carousel">
+                    <div class="carousel-track" id="track-mwc" data-current-slide="0">
+                        <div class="carousel-slide"><img src="./assets/eventos/mwc_foto1.jpg" alt="Talent Arena"></div>
+                        <div class="carousel-slide"><img src="./assets/eventos/mwc_foto2.jpg" alt="Conferencia Salud e IA"></div>
+                        <div class="carousel-slide"><video controls><source src="./assets/eventos/mwc_video.mp4" type="video/mp4"></video></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('track-mwc', -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveCarousel('track-mwc', 1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="fas fa-satellite-dish"></i> Febrero 2025</span>
+                <h3 data-i18n="mwc.title">Talent Arena & MWC: El futuro del Digital Health</h3>
+                <p data-i18n="mwc.p1">Hace unas semanas, tuve la oportunidad de participar...</p>
+                <p data-i18n="mwc.p2">Pasé el martes y el miércoles en el Talent Arena...</p>
+                <p data-i18n="mwc.p3">Otra sesión que realmente resonó conmigo fue la del Dr. Alexander Holbach...</p>
+                <div class="tech-tags">
+                    <span>#TalentArena</span><span>#MWC25</span><span>#DigitalHealth</span><span>#Bioinformatics</span>
+                </div>
+                <a href="URL_DE_TU_POST_EN_LINKEDIN" target="_blank" class="ev-btn">
+                    <i class="fab fa-linkedin"></i> <span data-i18n="eventos.btn_linkedin">Ver post original</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- SUMMIT — media izquierda, texto derecha — KOI/DORADO (estilo 24h original) -->
+        <article class="ev-card ev-summit"
+                 data-date="2025-03-01"
+                 data-tags="digitalsummit,networking,empresas,talent,carrera,entrevistas"
+                 data-category="empresas">
+            <div class="ev-symbol"><i class="fas fa-rocket"></i></div>
+            <div class="ev-media">
+                <div class="ev-carousel">
+                    <div class="carousel-track" id="track-summit" data-current-slide="0">
+                        <div class="carousel-slide"><img src="./assets/eventos/summit_foto.jpg" alt="Digital Summit"></div>
+                        <div class="carousel-slide"><video controls><source src="./assets/eventos/summit_video.mp4" type="video/mp4"></video></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('track-summit', -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveCarousel('track-summit', 1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="far fa-calendar-alt"></i> Marzo 2025</span>
+                <h3 data-i18n="summit.title">Digital Summit: Conectando con el sector tech</h3>
+                <p data-i18n="summit.p1">Hace unas semanas participé en el #DigitalSummit, una actividad en la que participamos todos los estudiantes de primer año.</p>
+                <p data-i18n="summit.p2">Honestamente, resultó ser mucho más valioso de lo que esperaba.</p>
+                <p data-i18n="summit.p3">El evento se dividió en dos partes...</p>
+                <div class="tech-tags">
+                    <span>#DigitalSummit</span><span>#Technology</span><span>#CareerDevelopment</span><span>#Talent</span>
+                </div>
+                <a href="URL_DE_TU_POST_EN_LINKEDIN" target="_blank" class="ev-btn">
+                    <i class="fab fa-linkedin"></i> <span data-i18n="eventos.btn_linkedin">Ver post original</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- SHIMMY — media izquierda, texto derecha — ROSA/SAKURA -->
+        <article class="ev-card ev-art"
+                 data-date="2025-04-01"
+                 data-tags="shimmy,arte,creatividad,emprendimiento,networking,barcelona"
+                 data-category="arte">
+            <div class="ev-symbol"><i class="fas fa-palette"></i></div>
+            <div class="ev-media">
+                <div class="ev-carousel">
+                    <div class="carousel-track" id="track-shimmy" data-current-slide="0">
+                        <div class="carousel-slide"><img src="./assets/eventos/shimmy_foto1.jpg" alt="Shimmy BCN"></div>
+                        <div class="carousel-slide"><img src="./assets/eventos/shimmy_foto2.jpg" alt="Arte y emprendimiento"></div>
+                        <div class="carousel-slide"><img src="./assets/eventos/shimmy_foto3.jpg" alt="Ropa hecha a mano"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveCarousel('track-shimmy', -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveCarousel('track-shimmy', 1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="ev-content">
+                <span class="ev-date-pill"><i class="fas fa-palette"></i> Abril 2025</span>
+                <h3 data-i18n="shimmy.title">Shimmy BCN: Donde el arte inspira a la tecnología</h3>
+                <p data-i18n="shimmy.p1">Ayer asistí a un evento pop-up de networking organizado por Shimmy BCN...</p>
+                <p data-i18n="shimmy.p2">El evento reunió a jóvenes emprendedores de todo el mundo...</p>
+                <p data-i18n="shimmy.p3">La creatividad, la resolución de problemas y el coraje para innovar...</p>
+                <div class="tech-tags">
+                    <span>#Creativity</span><span>#YoungEntrepreneurs</span><span>#TechMeetsArt</span><span>#ShimmyBCN</span>
+                </div>
+                <div class="ev-btn-group">
+                    <a href="URL_DEL_INSTAGRAM_DE_SHIMMY" target="_blank" class="ev-btn ev-btn-ig"><i class="fab fa-instagram"></i> <span data-i18n="shimmy.btn_ig">Ver Shimmy BCN</span></a>
+                    <a href="URL_DE_TU_POST_EN_LINKEDIN" target="_blank" class="ev-btn"><i class="fab fa-linkedin"></i> <span data-i18n="eventos.btn_linkedin">Ver post original</span></a>
+                </div>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<footer class="main-footer">
+    <p class="footer-copy">© Noa Gómez I García</p>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/noa-gómez-i-garcía-9561072b7" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://github.com/noagomigar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+</footer>
+
+<script src="./js/lang.js"></script>
+<script src="./js/eventos.js"></script>
 </body>
 </html>

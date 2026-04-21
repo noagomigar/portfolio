@@ -72,7 +72,7 @@ const translations = {
 
         // --- PROYECTOS ---
         "projects.title": "Mis Proyectos",
-        "projects.subtitle": "Aplicaciones, scripts y configuraciones de red en las que he trabajado durante mi formación y por mi cuenta.",
+        "projects.subtitle": "De una app fintech con React a un e-commerce fullstack con Node.js — proyectos reales donde el diseño, la lógica y el código se combinan para construir algo que funciona de verdad.",
         "imaginem.title": "IMAGINEM - Fintech Concept",
         "imaginem.desc": "Aplicación financiera diseñada para la Gen Z que fusiona banca, IA y conciencia ecológica. Incluye modo dual (Life/Bank), asistente inteligente y gestión de identidad fantasma.",
         "imaginem.tag_fintech": "Fintech",
@@ -91,6 +91,8 @@ const translations = {
         "teelab.btn_live": "Ver Sitio",
 
         // --- EVENTOS ---
+        "events.title": "Eventos & Publicaciones",
+        "events.subtitle": "Un diario de experiencias, reflexiones y momentos que han marcado mi trayectoria profesional.",
         "erasmus.title": "Mi Erasmus en Sedlčany",
         "erasmus.date": "Estancia Erasmus",
         "erasmus.p1": "Durante mi estancia Erasmus en Sedlčany, en el Gymnázium a Střední odborná škola ekonomická, viví un período que moldeó profundamente mi forma de enfocar el aprendizaje y el trabajo. Pasé un mes en un entorno que me sacó de mi zona de confort y me permitió crecer tanto personal como profesionalmente.",
@@ -222,7 +224,7 @@ const translations = {
 
         // --- PROYECTS ---
         "projects.title": "My Projects",
-        "projects.subtitle": "Applications, scripts and network configurations I have worked on during my training and on my own initiative.",
+        "projects.subtitle": "From a fintech app built with React to a fullstack e-commerce with Node.js — real projects where design, logic and code come together to build something that actually works.",
         "imaginem.title": "IMAGINEM - Fintech Concept",
         "imaginem.desc": "Revolutionary fintech app concept for Gen Z merging banking, AI, and eco-consciousness. Features dual modes (Life/Bank), smart assistant, and Ghost Identity management.",
         "imaginem.tag_fintech": "Fintech",
@@ -240,7 +242,9 @@ const translations = {
         "teelab.btn_repo": "View Code",
         "teelab.btn_live": "Live Demo",
 
-        // --- EVENTOS ---
+        // --- EVENTS ---
+        "events.title": "Events & Publications",
+        "events.subtitle": "A diary of experiences, reflections and moments that have shaped my professional journey.",
         "erasmus.title": "My Erasmus stay in Sedlčany",
         "erasmus.date": "Erasmus Stay",
         "erasmus.p1": "During my Erasmus stay in Sedlčany, at the Gymnázium a Střední odborná škola ekonomická, I experienced a period that deeply shaped the way I approach learning and work. I spent one month in an environment that pushed me out of my comfort zone and allowed me to grow both personally and professionally.",
@@ -373,7 +377,7 @@ const translations = {
 
         // --- PROJECTES ---
         "projects.title": "Els meus Projectes",
-        "projects.subtitle": "Aplicacions, scripts i configuracions de xarxa en les quals he treballat durant la meva formació i pel meu compte.",
+        "projects.subtitle": "D'una app fintech amb React a un e-commerce fullstack amb Node.js — projectes reals on el disseny, la lògica i el codi es combinen per construir alguna cosa que funciona de debò.",
         "imaginem.title": "IMAGINEM - Fintech Concept",
         "imaginem.desc": "Aplicació financera dissenyada per a la Gen Z que fusiona banca, IA i consciència ecològica. Inclou mode dual (Life/Bank), assistent intel·ligent i gestió d'identitat fantasma.",
         "imaginem.tag_fintech": "Fintech",
@@ -392,6 +396,8 @@ const translations = {
         "teelab.btn_live": "Veure lloc web",
 
         // --- EVENTS ---
+        "events.title": "Esdeveniments & Publicacions",
+        "events.subtitle": "Un diari d'experiències, reflexions i moments que han marcat la meva trajectòria professional.",
         "erasmus.title": "El meu Erasmus a Sedlčany",
         "erasmus.date": "Estada Erasmus",
         "erasmus.p1": "Durant la meva estada Erasmus a Sedlčany, al Gymnázium a Střední odborná škola ekonomická, vaig viure un període que va donar forma profundament a la meva manera d'enfocar l'aprenentatge i el treball. Vaig passar un mes en un entorn que em va treure de la meva zona de confort i em va permetre créixer tant a nivell personal com professional.",

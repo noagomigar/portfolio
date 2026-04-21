@@ -72,18 +72,20 @@ const translations = {
         // --- PROYECTOS ---
         "projects.title": "Mis Proyectos",
         "projects.subtitle": "Aplicaciones, scripts y configuraciones de red en las que he trabajado durante mi formación y por mi cuenta.",
-        "proj1.title": "App de Gestión Multiplataforma",
-        "proj1.desc": "Desarrollo de una aplicación completa conectando frontend con bases de datos relacionales.",
-        "proj1.tag1": "Programación",
-        "proj1.tag2": "Bases de Datos",
-        "proj1.tag3": "UI/UX",
-        "proj1.btn": "Ver Código",
-        "proj2.title": "Arquitectura de Red Segura",
-        "proj2.desc": "Diseño, configuración y puesta en marcha de una red local (LAN) en entorno Linux/Windows con políticas de seguridad.",
-        "proj2.tag1": "Linux",
-        "proj2.tag2": "Redes",
-        "proj2.tag3": "Ciberseguridad",
-        "proj2.btn": "Documentación",
+        "imaginem.title": "IMAGINEM - Fintech Concept",
+        "imaginem.desc": "Aplicación financiera diseñada para la Gen Z que fusiona banca, IA y conciencia ecológica. Incluye modo dual (Life/Bank), asistente inteligente y gestión de identidad fantasma.",
+        "imaginem.tag_fintech": "Fintech",
+        "imaginem.btn_repo": "Ver Código",
+        "imaginem.btn_live": "Ver Sitio",
+        "hybrid_sound.title": "The Hybrid Sound",
+        "hybrid_sound.desc": "Portal de música alternativa con diseño 'dark mode'. Incluye maquetación avanzada con Flexbox y Grid, animaciones personalizadas y una arquitectura de CSS modular.",
+        "hybrid_sound.btn_repo": "Ver Código",
+        "hybrid_sound.btn_live": "Ver Sitio",
+        "teelab.title": "Teelab - E-commerce Fullstack",
+        "teelab.desc": "Plataforma de venta de camisetas con filtrado dinámico de productos, sistema de carrito de compra y generación de tickets de pedido. Conectado a un backend en Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "Ver Código",
+        "teelab.btn_live": "Ver Sitio",
     },
 
     en: {
@@ -97,7 +99,7 @@ const translations = {
         // --- INDEX: HERO ---
         "hero.greeting": "Hi, I'm",
         "hero.role": "Cross-platform App Developer & Systems Technician",
-        "hero.desc": "Passionate about code, infrastructure, and problem-solving. Building efficient and secure solutions.",
+        "hero.desc": "Passionate about computer science, with a growing interest in the field of bioinformatics. I am motivated to understand and apply technology to data analysis in scientific environments, contributing to secure and efficient solutions from a technical and analytical perspective.",
 
         // --- INDEX: CV ---
         "cv.download": "Download Resume:",
@@ -113,7 +115,7 @@ const translations = {
 
         // --- SOBRE MÍ ---
         "about.title": "About Me",
-        "about.female_tech": "As a woman passionate about IT in a male-dominated field, I am determined to break barriers and become a female role model. My technical curiosity drives me to constantly learn and improve.",
+        "about.female_tech": "As a woman passionate about computer science in a traditionally male-dominated field, I am firmly determined to break barriers and become a female role model. I am particularly interested in guiding my career towards bioinformatics, combining data analysis in scientific environments with good cybersecurity practices and information protection. My technical curiosity drives me to keep learning and continuously evolving.",
         "about.education": "Education",
         "about.edu1_title": "Higher Degree in Cross-platform Application Development",
         "about.edu1_school": "Institut Torre de Malla",
@@ -159,18 +161,20 @@ const translations = {
         // --- PROYECTOS ---
         "projects.title": "My Projects",
         "projects.subtitle": "Applications, scripts and network configurations I have worked on during my training and on my own initiative.",
-        "proj1.title": "Cross-platform Management App",
-        "proj1.desc": "Development of a full application connecting the frontend with relational databases.",
-        "proj1.tag1": "Programming",
-        "proj1.tag2": "Databases",
-        "proj1.tag3": "UI/UX",
-        "proj1.btn": "View Code",
-        "proj2.title": "Secure Network Architecture",
-        "proj2.desc": "Design, configuration and deployment of a local area network (LAN) in a Linux/Windows environment with security policies.",
-        "proj2.tag1": "Linux",
-        "proj2.tag2": "Networking",
-        "proj2.tag3": "Cybersecurity",
-        "proj2.btn": "Documentation",
+        "imaginem.title": "IMAGINEM - Fintech Concept",
+        "imaginem.desc": "Revolutionary fintech app concept for Gen Z merging banking, AI, and eco-consciousness. Features dual modes (Life/Bank), smart assistant, and Ghost Identity management.",
+        "imaginem.tag_fintech": "Fintech",
+        "imaginem.btn_repo": "View Code",
+        "imaginem.btn_live": "Live Demo",
+        "hybrid_sound.title": "The Hybrid Sound",
+        "hybrid_sound.desc": "Alternative music portal with a 'dark mode' design. Features advanced layout using Flexbox and Grid, custom animations, and a modular CSS architecture.",
+        "hybrid_sound.btn_repo": "View Code",
+        "hybrid_sound.btn_live": "Live Demo",
+        "teelab.title": "Teelab - Fullstack E-commerce",
+        "teelab.desc": "T-shirt store platform featuring dynamic product filtering, a shopping cart system, and order ticket generation. Integrated with a custom backend hosted on Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "View Code",
+        "teelab.btn_live": "Live Demo",
     },
 
     ca: {
@@ -184,7 +188,7 @@ const translations = {
         // --- INDEX: HERO ---
         "hero.greeting": "Hola, sóc",
         "hero.role": "Desenvolupadora d'Aplicacions Multiplataforma i Tècnica de Sistemes",
-        "hero.desc": "Apassionada pel codi, la infraestructura i la resolució de problemes. Construint solucions eficients i segures.",
+        "hero.desc": "Apasionada per la informàtica, amb un interès creixent en l’àmbit de la bioinformàtica i la seguretat informàtica. Em motiva comprendre i aplicar la tecnologia a l’anàlisi de dades en entorns científics, contribuint a solucions segures i eficients des d’una perspectiva tècnica i analítica.",
 
         // --- INDEX: CV ---
         "cv.download": "Descarregar CV:",
@@ -200,7 +204,7 @@ const translations = {
 
         // --- SOBRE MI ---
         "about.title": "Coneix-me",
-        "about.female_tech": "Com a dona apassionada per la informàtica en un sector tradicionalment dominat per homes, estic fermament decidida a trencar barreres i convertir-me en un referent femení. La meva curiositat tècnica m'impulsa a no deixar d'aprendre i millorar.",
+        "about.female_tech": "Com a dona apassionada per la informàtica en un sector tradicionalment dominat per homes, estic fermament decidida a trencar barreres i convertir-me en un referent femení. M’interessa especialment orientar la meva trajectòria cap a la bioinformàtica, combinant l’anàlisi de dades en entorns científics amb bones pràctiques de ciberseguretat i protecció de la informació. La meva curiositat tècnica m’impulsa a continuar aprenent i evolucionant constantment.",
         "about.education": "Educació",
         "about.edu1_title": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
         "about.edu1_school": "Institut Torre de Malla",
@@ -246,18 +250,20 @@ const translations = {
         // --- PROJECTES ---
         "projects.title": "Els meus Projectes",
         "projects.subtitle": "Aplicacions, scripts i configuracions de xarxa en les quals he treballat durant la meva formació i pel meu compte.",
-        "proj1.title": "App de Gestió Multiplataforma",
-        "proj1.desc": "Desenvolupament d'una aplicació completa connectant el frontend amb bases de dades relacionals.",
-        "proj1.tag1": "Programació",
-        "proj1.tag2": "Bases de Dades",
-        "proj1.tag3": "UI/UX",
-        "proj1.btn": "Veure Codi",
-        "proj2.title": "Arquitectura de Xarxa Segura",
-        "proj2.desc": "Disseny, configuració i posada en marxa d'una xarxa local (LAN) en entorn Linux/Windows amb polítiques de seguretat.",
-        "proj2.tag1": "Linux",
-        "proj2.tag2": "Xarxes",
-        "proj2.tag3": "Ciberseguretat",
-        "proj2.btn": "Documentació",
+        "imaginem.title": "IMAGINEM - Fintech Concept",
+        "imaginem.desc": "Aplicació financera dissenyada per a la Gen Z que fusiona banca, IA i consciència ecològica. Inclou mode dual (Life/Bank), assistent intel·ligent i gestió d'identitat fantasma.",
+        "imaginem.tag_fintech": "Fintech",
+        "imaginem.btn_repo": "Veure Codi",
+        "imaginem.btn_live": "Veure lloc web",
+        "hybrid_sound.title": "The Hybrid Sound",
+        "hybrid_sound.desc": "Portal de música alternativa amb disseny 'dark mode'. Inclou maquetació avançada amb Flexbox i Grid, animacions personalitzades i una arquitectura de CSS modular.",
+        "hybrid_sound.btn_repo": "Veure Codi",
+        "hybrid_sound.btn_live": "Veure lloc web",
+        "teelab.title": "Teelab - E-commerce Fullstack",
+        "teelab.desc": "Plataforma de venda de samarretes amb filtratge dinàmic de productes, sistema de carret d'anar a comprar i generació de tiquets de comanda. Connectat a un backend a Render.",
+        "teelab.tag_fullstack": "Fullstack",
+        "teelab.btn_repo": "Veure Codi",
+        "teelab.btn_live": "Veure lloc web",
     }
 };
 

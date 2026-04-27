@@ -90,6 +90,21 @@ const translations = {
         "teelab.btn_repo": "Ver Código",
         "teelab.btn_live": "Ver Sitio",
 
+        "tetris.title": "Tetris en Kotlin",
+        "tetris.desc": "Juego de Tetris funcional para consola desarrollado en Kotlin con arquitectura orientada a objetos. Incluye piezas con color ANSI, caída de piezas, eliminación de filas y una batería de tests unitarios con JUnit 5 que cubre las operaciones principales del tablero.",
+        "tetris.tag": "Consola",
+        "tetris.btn_repo": "Ver Código",
+
+        "trivial.title": "Trivial - Quiz App Android",
+        "trivial.desc": "Juego de preguntas y respuestas para Android con 6 categorías, 3 niveles de dificultad, temporizador animado y logo Lottie. Arquitectura MVVM con navegación type-safe y StateFlow.",
+        "trivial.tag": "Android",
+        "trivial.btn_repo": "Ver Código",
+        "trivial.btn_apk": "Descargar APK",
+
+        "arteum.title": "Arteum - Art Explorer Android",
+        "arteum.desc": "App Android para explorar la colección del Art Institute of Chicago. Búsqueda en tiempo real, favoritos con Room, modo oscuro y alternancia entre vista lista y cuadrícula.",
+        "arteum.tag": "Android",
+
         // --- EVENTOS ---
         "events.title": "Eventos & Publicaciones",
         "events.subtitle": "Un diario de experiencias, reflexiones y momentos que han marcado mi trayectoria profesional.",
@@ -241,6 +256,21 @@ const translations = {
         "teelab.tag_fullstack": "Fullstack",
         "teelab.btn_repo": "View Code",
         "teelab.btn_live": "Live Demo",
+
+        "tetris.title": "Tetris in Kotlin",
+        "tetris.desc": "Fully functional console Tetris game built in Kotlin with object-oriented architecture. Features ANSI colour rendering, piece dropping, row clearing, and a JUnit 5 unit test suite covering all core board operations.",
+        "tetris.tag": "Console",
+        "tetris.btn_repo": "View Code",
+
+        "trivial.title": "Trivial - Quiz App Android",
+        "trivial.desc": "Android quiz game with 6 categories, 3 difficulty levels, animated timer and Lottie logo. MVVM architecture with type-safe navigation and StateFlow.",
+        "trivial.tag": "Android",
+        "trivial.btn_repo": "View Code",
+        "trivial.btn_apk": "Download APK",
+
+        "arteum.title": "Arteum - Art Explorer Android",
+        "arteum.desc": "Android app to explore the Art Institute of Chicago collection. Real-time search, full detail view, Room favourites, dark mode and list/grid toggle.",
+        "arteum.tag": "Android",
 
         // --- EVENTS ---
         "events.title": "Events & Publications",
@@ -394,6 +424,21 @@ const translations = {
         "teelab.tag_fullstack": "Fullstack",
         "teelab.btn_repo": "Veure Codi",
         "teelab.btn_live": "Veure lloc web",
+
+        "tetris.title": "Tetris en Kotlin",
+        "tetris.desc": "Joc de Tetris funcional per a consola desenvolupat en Kotlin amb arquitectura orientada a objectes. Inclou peces amb color ANSI, caiguda de peces, eliminació de files i una bateria de tests unitaris amb JUnit 5 que cobreix les operacions principals del tauler.",
+        "tetris.tag": "Consola",
+        "tetris.btn_repo": "Veure Codi",
+
+        "trivial.title": "Trivial - Quiz App Android",
+        "trivial.desc": "Joc de preguntes i respostes per a Android amb 6 categories, 3 nivells de dificultat, temporitzador animat i logo Lottie. Arquitectura MVVM amb navegació type-safe i StateFlow.",
+        "trivial.tag": "Android",
+        "trivial.btn_repo": "Veure Codi",
+        "trivial.btn_apk": "Descarregar APK",
+
+        "arteum.title": "Arteum - Art Explorer Android",
+        "arteum.desc": "App Android per explorar la col·lecció de l'Art Institute of Chicago. Cerca en temps real, favorits amb Room, mode fosc i alternança entre vista llista i quadrícula.",
+        "arteum.tag": "Android",
 
         // --- EVENTS ---
         "events.title": "Esdeveniments & Publicacions",

@@ -974,6 +974,24 @@ body::after {
     background: linear-gradient(90deg, var(--bamboo), var(--bamboo-mid));
 }
 
+.project-card:nth-child(3)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--lavender), var(--sakura));
+}
+
+.project-card:nth-child(4)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--koi), var(--gold));
+}
+
+.project-card:nth-child(5)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--lavender), #b8aee0);
+}
+
 .project-img {
     aspect-ratio: 16 / 8;
     display: flex; align-items: center; justify-content: center;
@@ -985,8 +1003,27 @@ body::after {
 .project-card:nth-child(2) .project-img {
     background: linear-gradient(145deg, var(--bamboo-pale) 0%, var(--cobalt-pale) 100%);
 }
+
 .project-card:nth-child(3) .project-img {
     background: linear-gradient(145deg, var(--lavender-pale) 0%, var(--sakura-pale) 100%);
+}
+
+.project-card:nth-child(4) .project-img {
+    background: linear-gradient(145deg, var(--koi-pale) 0%, var(--gold-pale) 100%);
+}
+
+.project-card:nth-child(5) .project-img {
+    background: linear-gradient(145deg, var(--lavender-pale) 0%, #ede8f8 100%);
+}
+
+/* Arteum — azul porcelana claro (distinto al cobalt del primer proyecto) */
+.project-card:nth-child(6)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--cobalt-soft), var(--cobalt-pale));
+}
+.project-card:nth-child(6) .project-img {
+    background: linear-gradient(145deg, #dce8f8 0%, var(--cobalt-pale) 100%);
 }
 
 .project-img::before {

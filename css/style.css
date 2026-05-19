@@ -207,25 +207,81 @@ body::after {
 .language-picker {
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-family: var(--font-ui);
-    font-size: 0.73rem;
-    background: var(--parchment);
-    padding: 5px 12px;
-    border-radius: var(--r-pill);
-    border: 1px solid var(--border-soft);
-    flex-shrink: 0;
-}
-.language-picker i { color: var(--cobalt-soft); font-size: 0.8rem; }
-#lang-selector {
+    gap: 4px;
     background: transparent;
     border: none;
-    color: var(--text-main);
+    padding: 0;
+}
+
+.lang-btn {
     font-family: var(--font-ui);
-    font-size: 0.73rem;
+    font-size: 0.68rem;
     font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 6px 13px;
+    border-radius: var(--r-pill);
+    border: 1.5px solid transparent;
     cursor: pointer;
-    outline: none;
+    transition: all 0.22s ease;
+    background: transparent;
+    color: var(--text-mid);
+    border-color: var(--border-mid);
+}
+
+.lang-btn:hover { transform: translateY(-1px); }
+
+/* Castellano — koi/naranja dorado */
+.lang-btn.lang-es {
+    color: var(--koi);
+    border-color: rgba(232,112,42,0.3);
+    background: transparent;
+}
+.lang-btn.lang-es:hover,
+.lang-btn.lang-es.active {
+    background: var(--koi-pale);
+    border-color: var(--koi);
+    box-shadow: 0 3px 12px rgba(232,112,42,0.22);
+}
+.lang-btn.lang-es.active {
+    background: linear-gradient(135deg, var(--koi-pale), var(--gold-pale));
+    color: var(--koi-bright);
+    font-weight: 600;
+}
+
+/* Català — sakura/rojo rosa */
+.lang-btn.lang-ca {
+    color: var(--sakura);
+    border-color: rgba(212,96,138,0.3);
+    background: transparent;
+}
+.lang-btn.lang-ca:hover,
+.lang-btn.lang-ca.active {
+    background: var(--sakura-pale);
+    border-color: var(--sakura);
+    box-shadow: 0 3px 12px rgba(212,96,138,0.22);
+}
+.lang-btn.lang-ca.active {
+    background: linear-gradient(135deg, var(--sakura-pale), #fce4ee);
+    color: var(--sakura-bright);
+    font-weight: 600;
+}
+
+/* English — lavanda/lila */
+.lang-btn.lang-en {
+    color: var(--lavender);
+    border-color: rgba(148,136,196,0.3);
+    background: transparent;
+}
+.lang-btn.lang-en:hover,
+.lang-btn.lang-en.active {
+    background: var(--lavender-pale);
+    border-color: var(--lavender);
+    box-shadow: 0 3px 12px rgba(148,136,196,0.22);
+}
+.lang-btn.lang-en.active {
+    background: linear-gradient(135deg, var(--lavender-pale), #ede8f8);
+    color: var(--lavender);
+    font-weight: 600;
 }
 
 /* ============================================================
@@ -735,12 +791,19 @@ body::after {
 .exp-title-band {
     background: var(--cream);
     padding: var(--sp-xl) var(--sp-2xl) var(--sp-l);
-    position: relative; overflow: hidden;
+    position: relative; 
+    overflow: hidden;
+    text-align: center;
 }
 .exp-title-band::after {
     display: none;
 }
 .exp-title-band .page-title { color: var(--text-main); }
+
+.text-center .page-title::after,
+.exp-title-band .page-title::after {
+    margin: var(--sp-s) auto 0;
+}
 
 .experience-list {
     display: flex; flex-direction: column;
@@ -992,6 +1055,18 @@ body::after {
     background: linear-gradient(90deg, var(--lavender), #b8aee0);
 }
 
+.project-card:nth-child(6)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--cobalt-soft), var(--cobalt-pale));
+}
+
+.project-card:nth-child(7)::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--bamboo), var(--cobalt-soft));
+}
+
 .project-img {
     aspect-ratio: 16 / 8;
     display: flex; align-items: center; justify-content: center;
@@ -1016,14 +1091,12 @@ body::after {
     background: linear-gradient(145deg, var(--lavender-pale) 0%, #ede8f8 100%);
 }
 
-/* Arteum — azul porcelana claro (distinto al cobalt del primer proyecto) */
-.project-card:nth-child(6)::after {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, var(--cobalt-soft), var(--cobalt-pale));
-}
 .project-card:nth-child(6) .project-img {
     background: linear-gradient(145deg, #dce8f8 0%, var(--cobalt-pale) 100%);
+}
+
+.project-card:nth-child(7) .project-img {
+    background: linear-gradient(145deg, var(--bamboo-pale) 0%, var(--cobalt-pale) 100%);
 }
 
 .project-img::before {

@@ -361,3 +361,27 @@ function setActiveLangBtn(lang) {
         btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
     });
 }
+function updateContent(lang) {
+    const t = translations[lang];
+    if (!t) return;
+
+    // Keys that contain HTML tags and must use innerHTML
+    const htmlKeys = new Set([
+        "exp1.desc",
+        "exp2.highlight"
+    ]);
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key] === undefined) return;
+
+        if (htmlKeys.has(key)) {
+            el.innerHTML = t[key];
+        } else {
+            el.textContent = t[key];
+        }
+    });
+
+    // Update the <html lang=""> attribute
+    document.documentElement.lang = lang;
+}

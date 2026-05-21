@@ -298,13 +298,13 @@ body::after {
     overflow: hidden;
 }
 
-/* Blob sakura fondo derecha */
+/* Blob cobalto fondo derecha */
 .home-container::before {
     content: '';
     position: absolute;
     width: 700px; height: 700px;
     border-radius: 55% 45% 40% 60% / 45% 55% 45% 55%;
-    background: radial-gradient(ellipse at center, var(--sakura-pale) 0%, transparent 68%);
+    background: radial-gradient(ellipse at center, var(--cobalt-pale) 0%, transparent 68%);
     top: -200px; right: -200px;
     pointer-events: none; opacity: 0.7;
     animation: morphBlob 14s ease-in-out infinite;
@@ -349,7 +349,7 @@ body::after {
     position: absolute;
     width: 360px; height: 360px;
     border-radius: 60% 40% 55% 45% / 48% 58% 42% 52%;
-    background: linear-gradient(135deg, var(--sakura-pale) 0%, var(--cobalt-pale) 100%);
+    background: linear-gradient(135deg, var(--koi-pale) 0%, var(--cobalt-pale) 100%);
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     animation: morphBlob 10s ease-in-out infinite;
